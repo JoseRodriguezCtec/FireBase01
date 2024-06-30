@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.cibertec.cibertecapp.R
+import com.cibertec.cibertecapp.map.MapFragment
 import com.cibertec.cibertecapp.news.NewsFragment
 import com.cibertec.cibertecapp.notas.NotaActivity
 import com.cibertec.cibertecapp.subject.SubjectFragment
@@ -25,8 +26,9 @@ class MenuActivity: AppCompatActivity(), MenuDrawerAction {
         nav_view.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.itemNews -> {
-                    val fragment = NewsFragment.newInstance()
-                    fragment.interfaceMenu = this
+                    //para instanciar el fragmento maps se llama al método newInstance
+                    val fragment = MapFragment.newInstance()
+                    //fragment.interfaceMenu = this
                     openFragment(fragment)
                     true
                 }

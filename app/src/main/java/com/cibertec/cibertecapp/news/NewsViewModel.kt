@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.GeoPoint
 
 class NewsViewModel: ViewModel() {
 
@@ -26,8 +27,11 @@ class NewsViewModel: ViewModel() {
                     val fecha = data["fecha"] as String
                     val imagen = data["imagen"] as String
                     val estado = data["estado"] as Boolean
+                    val marker = data[""] as GeoPoint
 
-                    val news = News(contenido, estado, fecha, imagen, titulo)
+
+
+                    val news = News(contenido, estado, fecha, imagen, titulo, marker)
                     newsList.add(news)
                 }
                 newsListMutable.value = newsList
