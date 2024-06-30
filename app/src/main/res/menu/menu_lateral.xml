@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemNotas"
+        android:title="Bloc de notas"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/itemBiblioteca"
+        android:title="Biblioteca"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/itemAjustes"
+        android:title="Ajustes"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/itemContacto"
+        android:title="Contacto"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+</menu>

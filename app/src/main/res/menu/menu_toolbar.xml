@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemCompartir"
+        android:title="Compartir"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_cast_24"/>
+
+    <item
+        android:id="@+id/itemActualizar"
+        android:title="Actualizar"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_cast_24"/>
+
+    <item
+        android:id="@+id/itemActualizar2"
+        android:title="Actualizar"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_cast_24"/>
+
+    <item
+        android:id="@+id/itemActualizar3"
+        android:title="Actualizar"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_cast_24"/>
+
+    <item
+        android:id="@+id/itemActualizar4"
+        android:title="Actualizar"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_cast_24"/>
+
+    <item
+        android:id="@+id/itemActualizar5"
+        android:title="Actualizar"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_cast_24"/>
+
+
+</menu>

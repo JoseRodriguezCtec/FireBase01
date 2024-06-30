@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        app:title="Noticias"
+        app:titleTextColor="@color/white"
+        app:subtitle="Las noticias del día"
+        app:subtitleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_menu"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_news"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarNews"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
